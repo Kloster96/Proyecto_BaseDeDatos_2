@@ -13,34 +13,6 @@ Permite la gestión de libros, préstamos, devoluciones y reportes en una biblio
 
 ---
 
-### 📝 Estructura de la Base de Datos (MongoDB)
-
-### 📘 Colección: `libros`
-```json
-{
-  "_id": ObjectId,
-  "titulo": "Cien años de soledad",
-  "autor": "Gabriel García Márquez",
-  "isbn": "978-0307389732",
-  "genero": "Realismo mágico",
-  "anioPublicacion": 1967,
-  "copias": 3,
-  "disponibles": 2
-} 
-```
-
-📝 Colección: prestamos
-
-``` {
-  "_id": ObjectId,
-  "libroId": ObjectId,
-  "usuario": "Juan Pérez",
-  "fechaPrestamo": ISODate,
-  "fechaDevolucion": ISODate,
-  "devuelto": false
-}
-```
-
 🚀 Tecnologías Utilizadas
 	•	Backend: Node.js + Express
 	•	Base de datos: MongoDB (conexión nativa)
