@@ -28,7 +28,7 @@ git clone https://github.com/Kloster96/Proyecto_BaseDeDatos_2.git
 2.	Instalar dependencias backend:
 ```
 cd backend
-npm install
+npm install express mongoose cors dotenv
 ```
 
 3.	Iniciar MongoDB localmente.
