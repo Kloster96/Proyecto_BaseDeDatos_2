@@ -1,11 +1,11 @@
-# 📚 Sistema de Gestión de Biblioteca Digital
+### 📚 Sistema de Gestión de Biblioteca Digital
 
 Proyecto Fullstack desarrollado con **Node.js**, **Express**, **MongoDB** y **Frontend Vanilla JS + Tailwind CSS**.  
 Permite la gestión de libros, préstamos, devoluciones y reportes en una biblioteca digital.
 
 ---
 
-## ✨ Funcionalidades Implementadas
+### ✨ Funcionalidades Implementadas
 
 - ✅ **Agregar libro** al catálogo con título, autor, ISBN, género, año y cantidad de copias.
 - ✅ **Buscar libros** por título, autor o género.
@@ -16,7 +16,7 @@ Permite la gestión de libros, préstamos, devoluciones y reportes en una biblio
 
 ---
 
-## 📝 Estructura de la Base de Datos (MongoDB)
+### 📝 Estructura de la Base de Datos (MongoDB)
 
 ### 📘 Colección: `libros`
 ```json
