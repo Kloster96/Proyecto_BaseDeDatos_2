@@ -70,7 +70,6 @@ npm install
 👤 Autor
 
 Luciano Kloster
-Proyecto académico - UTN
 
 
 
