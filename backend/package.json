@@ -1,0 +1,16 @@
+{
+  "name": "biblioteca-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Luciano Kloster",
+  "license": "ISC",
+  "description": "Sistema de gestión de biblioteca con MongoDB y Node.js",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

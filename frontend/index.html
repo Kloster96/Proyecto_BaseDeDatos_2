@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biblioteca Digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6 flex flex-col items-center min-h-screen">
+
+  <h1 class="text-3xl font-bold mb-6">Biblioteca Digital</h1>
+
+  <div class="w-full max-w-4xl space-y-8">
+    <section class="bg-white p-8 rounded shadow">
+      <h2 class="text-xl font-semibold mb-4">Agregar Libro</h2>
+      <form id="form-libro" class="space-y-4">
+        <input required name="titulo" placeholder="Título" class="w-full p-2 border rounded" />
+        <input required name="autor" placeholder="Autor" class="w-full p-2 border rounded" />
+        <input required name="isbn" placeholder="ISBN" class="w-full p-2 border rounded" />
+        <input required name="genero" placeholder="Género" class="w-full p-2 border rounded" />
+        <input required name="anioPublicacion" type="number" placeholder="Año de publicación" class="w-full p-2 border rounded" />
+        <input required name="copias" type="number" placeholder="Cantidad de copias" class="w-full p-2 border rounded" />
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Agregar</button>
+      </form>
+    </section>
+
+    <section class="bg-white p-8 rounded shadow">
+      <h2 class="text-xl font-semibold mb-4">Prestar Libro</h2>
+      <form id="form-prestar" class="space-y-4">
+        <input required name="isbn" placeholder="ISBN del libro" class="w-full p-2 border rounded" />
+        <input required name="usuario" placeholder="Nombre del usuario" class="w-full p-2 border rounded" />
+        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 w-full">Prestar</button>
+      </form>
+      <div id="mensaje-prestar" class="mt-2 text-sm text-center"></div>
+    </section>
+
+    <section class="bg-white p-8 rounded shadow">
+    <h2 class="text-xl font-semibold mb-4 text-center">Préstamos Activos</h2>
+    <table class="min-w-full border border-gray-300 rounded overflow-hidden">
+        <thead class="bg-yellow-500 text-white">
+        <tr>
+            <th class="py-2 px-4 border-r">Usuario</th>
+            <th class="py-2 px-4 border-r">Título</th>
+            <th class="py-2 px-4 border-r">Fecha Préstamo</th>
+            <th class="py-2 px-4">Acción</th>
+        </tr>
+        </thead>
+        <tbody id="lista-prestamos" class="bg-white text-center"></tbody>
+    </table>
+    </section>
+    
+    <section class="bg-white p-8 rounded shadow"">
+    <h2 class="text-xl font-semibold mb-4 text-center">Top 5 Libros Más Prestados</h2>
+    <table class="min-w-full border border-gray-300 rounded overflow-hidden">
+        <thead class="bg-purple-600 text-white">
+        <tr>
+            <th class="py-2 px-4 border-r border-purple-700">Título</th>
+            <th class="py-2 px-4 border-r border-purple-700">Autor</th>
+            <th class="py-2 px-4">Cantidad de préstamos</th>
+        </tr>
+        </thead>
+        <tbody id="lista-reporte" class="bg-white text-center"></tbody>
+    </table>
+    </section>
+
+    <section class="bg-white p-8 rounded shadow">
+      <h2 class="text-xl font-semibold mb-4 text-center">Libros en catálogo</h2>
+      <input id="busqueda" type="text" placeholder="Buscar por título, autor o género" class="w-full p-2 mb-4 border rounded" />
+      <table class="min-w-full border border-gray-300 rounded overflow-hidden">
+        <thead class="bg-blue-600 text-white">
+          <tr>
+            <th class="py-2 px-4 border-r border-blue-700">Título</th>
+            <th class="py-2 px-4 border-r border-blue-700">Autor</th>
+            <th class="py-2 px-4 border-r border-blue-700">ISBN</th>
+            <th class="py-2 px-4 border-r border-blue-700">Año</th>
+            <th class="py-2 px-4 border-r border-blue-700">Copias</th>
+            <th class="py-2 px-4">Disponibles</th>
+          </tr>
+        </thead>
+        <tbody id="lista-libros" class="bg-white text-center"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
