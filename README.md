@@ -5,14 +5,11 @@ Permite la gestión de libros, préstamos, devoluciones y reportes en una biblio
 
 ---
 
-### ✨ Funcionalidades Implementadas
-
-- ✅ **Agregar libro** al catálogo con título, autor, ISBN, género, año y cantidad de copias.
-- ✅ **Buscar libros** por título, autor o género.
-- ✅ **Registrar préstamo** de libros si hay copias disponibles.
-- ✅ **Registrar devolución** de libros y actualizar disponibilidad.
-- ✅ **Visualizar préstamos activos**.
-- ✅ **Generar reporte** de los 5 libros más prestados.
+### 🚀 Tecnologías Utilizadas
+	•	Backend: Node.js + Express
+	•	Base de datos: MongoDB (conexión nativa)
+	•	Frontend: HTML5, Tailwind CSS, JavaScript
+	•	Dependencias: mongodb, express, cors
 
 ---
 
