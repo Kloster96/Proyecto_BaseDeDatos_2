@@ -52,9 +52,11 @@ Permite la gestión de libros, préstamos, devoluciones y reportes en una biblio
 
 🛠️ ¿Cómo ejecutar el proyecto?
 1.	Clonar el repositorio:
-``` git clone https://github.com/Kloster96/Proyecto_BaseDeDatos_2.git ```
+``` 
+git clone https://github.com/Kloster96/Proyecto_BaseDeDatos_2.git 
+```
 
-	2.	Instalar dependencias backend:
+2.	Instalar dependencias backend:
 ```
 cd backend
 npm install
